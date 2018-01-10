@@ -12,9 +12,9 @@ namespace CashDesk.Tests
         {
             using (var dal = new DataAccess())
             {
-                await dal.InitializeDatabaseAsync();
-                var memberNumber = await dal.AddMemberAsync("Foo", "DepositStatistics", DateTime.Today.AddYears(-18));
-                await dal.JoinMemberAsync(memberNumber);
+                dal.InitializeDatabaseAsync();
+                var memberNumber = dal.AddMemberAsync("Foo", "DepositStatistics", DateTime.Today.AddYears(-18));
+                dal.JoinMemberAsync(memberNumber);
                 await dal.DepositAsync(memberNumber, 100M);
                 await dal.DepositAsync(memberNumber, 100M);
 

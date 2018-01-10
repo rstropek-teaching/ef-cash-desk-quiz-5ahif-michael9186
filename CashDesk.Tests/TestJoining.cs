@@ -11,7 +11,7 @@ namespace CashDesk.Tests
         {
             using (var dal = new DataAccess())
             {
-                Assert.ThrowsAsync<ArgumentException>(async () => await dal.JoinMemberAsync(Int32.MaxValue));
+                Assert.ThrowsAsync<ArgumentException>(async () =>  dal.JoinMemberAsync(Int32.MaxValue));
             }
         }
 
@@ -20,9 +20,9 @@ namespace CashDesk.Tests
         {
             using (var dal = new DataAccess())
             {
-                await dal.InitializeDatabaseAsync();
-                var memberNumber = await dal.AddMemberAsync("Foo", "JoinMember", DateTime.Today.AddYears(-18));
-                await dal.JoinMemberAsync(memberNumber);
+                 dal.InitializeDatabaseAsync();
+                var memberNumber =  dal.AddMemberAsync("Foo", "JoinMember", DateTime.Today.AddYears(-18));
+                 dal.JoinMemberAsync(memberNumber);
             }
         }
 
@@ -31,10 +31,10 @@ namespace CashDesk.Tests
         {
             using (var dal = new DataAccess())
             {
-                await dal.InitializeDatabaseAsync();
-                var memberNumber = await dal.AddMemberAsync("Foo", "AlreadyMemberJoining", DateTime.Today.AddYears(-18));
-                await dal.JoinMemberAsync(memberNumber);
-                await Assert.ThrowsAsync<AlreadyMemberException>(async () => await dal.JoinMemberAsync(memberNumber));
+                 dal.InitializeDatabaseAsync();
+                var memberNumber =  dal.AddMemberAsync("Foo", "AlreadyMemberJoining", DateTime.Today.AddYears(-18));
+                 dal.JoinMemberAsync(memberNumber);
+                 Assert.ThrowsAsync<AlreadyMemberException>(async () =>  dal.JoinMemberAsync(memberNumber));
             }
         }
     }

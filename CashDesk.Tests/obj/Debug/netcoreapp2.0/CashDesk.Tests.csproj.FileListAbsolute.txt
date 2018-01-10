@@ -1,0 +1,16 @@
+C:\Users\Michael\Source\Repos\ef-cash-desk-quiz-5ahif-michael9186\CashDesk.Tests\obj\Debug\netcoreapp2.0\CashDesk.Tests.csproj.CoreCompileInputs.cache
+C:\Users\Michael\Source\Repos\ef-cash-desk-quiz-5ahif-michael9186\CashDesk.Tests\obj\Debug\netcoreapp2.0\CashDesk.Tests.AssemblyInfoInputs.cache
+C:\Users\Michael\Source\Repos\ef-cash-desk-quiz-5ahif-michael9186\CashDesk.Tests\obj\Debug\netcoreapp2.0\CashDesk.Tests.AssemblyInfo.cs
+C:\Users\Michael\Source\Repos\ef-cash-desk-quiz-5ahif-michael9186\CashDesk.Tests\bin\Debug\netcoreapp2.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\Michael\Source\Repos\ef-cash-desk-quiz-5ahif-michael9186\CashDesk.Tests\bin\Debug\netcoreapp2.0\xunit.runner.utility.netstandard15.dll
+C:\Users\Michael\Source\Repos\ef-cash-desk-quiz-5ahif-michael9186\CashDesk.Tests\bin\Debug\netcoreapp2.0\xunit.runner.reporters.netstandard15.dll
+C:\Users\Michael\Source\Repos\ef-cash-desk-quiz-5ahif-michael9186\CashDesk.Tests\bin\Debug\netcoreapp2.0\CashDesk.Tests.deps.json
+C:\Users\Michael\Source\Repos\ef-cash-desk-quiz-5ahif-michael9186\CashDesk.Tests\bin\Debug\netcoreapp2.0\CashDesk.Tests.runtimeconfig.json
+C:\Users\Michael\Source\Repos\ef-cash-desk-quiz-5ahif-michael9186\CashDesk.Tests\bin\Debug\netcoreapp2.0\CashDesk.Tests.runtimeconfig.dev.json
+C:\Users\Michael\Source\Repos\ef-cash-desk-quiz-5ahif-michael9186\CashDesk.Tests\bin\Debug\netcoreapp2.0\CashDesk.Tests.dll
+C:\Users\Michael\Source\Repos\ef-cash-desk-quiz-5ahif-michael9186\CashDesk.Tests\bin\Debug\netcoreapp2.0\CashDesk.Tests.pdb
+C:\Users\Michael\Source\Repos\ef-cash-desk-quiz-5ahif-michael9186\CashDesk.Tests\bin\Debug\netcoreapp2.0\CashDesk.dll
+C:\Users\Michael\Source\Repos\ef-cash-desk-quiz-5ahif-michael9186\CashDesk.Tests\bin\Debug\netcoreapp2.0\CashDesk.pdb
+C:\Users\Michael\Source\Repos\ef-cash-desk-quiz-5ahif-michael9186\CashDesk.Tests\obj\Debug\netcoreapp2.0\CashDesk.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Michael\Source\Repos\ef-cash-desk-quiz-5ahif-michael9186\CashDesk.Tests\obj\Debug\netcoreapp2.0\CashDesk.Tests.dll
+C:\Users\Michael\Source\Repos\ef-cash-desk-quiz-5ahif-michael9186\CashDesk.Tests\obj\Debug\netcoreapp2.0\CashDesk.Tests.pdb

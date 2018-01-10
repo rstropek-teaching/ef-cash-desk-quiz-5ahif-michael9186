@@ -11,7 +11,7 @@ namespace CashDesk.Tests
         {
             using (var dal = new DataAccess())
             {
-                Assert.ThrowsAsync<ArgumentException>(async () => await dal.AddMemberAsync(null, null, DateTime.Today));
+                Assert.ThrowsAsync<ArgumentException>(async () => dal.AddMemberAsync(null, null, DateTime.Today));
             }
         }
 
@@ -20,8 +20,8 @@ namespace CashDesk.Tests
         {
             using (var dal = new DataAccess())
             {
-                await dal.InitializeDatabaseAsync();
-                var memberNumber = await dal.AddMemberAsync("Foo", "AddMember", DateTime.Today.AddYears(-18));
+                dal.InitializeDatabaseAsync();
+                var memberNumber = dal.AddMemberAsync("Foo", "AddMember", DateTime.Today.AddYears(-18));
                 Assert.True(memberNumber >= 0);
             }
         }
@@ -31,9 +31,9 @@ namespace CashDesk.Tests
         {
             using (var dal = new DataAccess())
             {
-                await dal.InitializeDatabaseAsync();
-                await dal.AddMemberAsync("Foo", "DuplicateLastName", DateTime.Today.AddYears(-18));
-                await Assert.ThrowsAsync<DuplicateNameException>(async () => await dal.AddMemberAsync("Foo", "DuplicateLastName", DateTime.Today.AddYears(-18)));
+                dal.InitializeDatabaseAsync();
+                dal.AddMemberAsync("Foo", "DuplicateLastName", DateTime.Today.AddYears(-18));
+                await Assert.ThrowsAsync<DuplicateNameException>(async () => dal.AddMemberAsync("Foo", "DuplicateLastName", DateTime.Today.AddYears(-18)));
             }
         }
     }

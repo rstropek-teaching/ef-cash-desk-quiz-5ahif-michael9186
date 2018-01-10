@@ -1,0 +1,9 @@
+C:\Users\Michael\Source\Repos\ef-cash-desk-quiz-5ahif-michael9186\CashDesk\obj\Debug\netcoreapp2.0\CashDesk.csproj.CoreCompileInputs.cache
+C:\Users\Michael\Source\Repos\ef-cash-desk-quiz-5ahif-michael9186\CashDesk\obj\Debug\netcoreapp2.0\CashDesk.AssemblyInfoInputs.cache
+C:\Users\Michael\Source\Repos\ef-cash-desk-quiz-5ahif-michael9186\CashDesk\obj\Debug\netcoreapp2.0\CashDesk.AssemblyInfo.cs
+C:\Users\Michael\Source\Repos\ef-cash-desk-quiz-5ahif-michael9186\CashDesk\bin\Debug\netcoreapp2.0\CashDesk.deps.json
+C:\Users\Michael\Source\Repos\ef-cash-desk-quiz-5ahif-michael9186\CashDesk\bin\Debug\netcoreapp2.0\CashDesk.dll
+C:\Users\Michael\Source\Repos\ef-cash-desk-quiz-5ahif-michael9186\CashDesk\bin\Debug\netcoreapp2.0\CashDesk.pdb
+C:\Users\Michael\Source\Repos\ef-cash-desk-quiz-5ahif-michael9186\CashDesk\obj\Debug\netcoreapp2.0\CashDesk.csprojResolveAssemblyReference.cache
+C:\Users\Michael\Source\Repos\ef-cash-desk-quiz-5ahif-michael9186\CashDesk\obj\Debug\netcoreapp2.0\CashDesk.dll
+C:\Users\Michael\Source\Repos\ef-cash-desk-quiz-5ahif-michael9186\CashDesk\obj\Debug\netcoreapp2.0\CashDesk.pdb

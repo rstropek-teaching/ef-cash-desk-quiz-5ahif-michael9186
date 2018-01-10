@@ -11,7 +11,7 @@ namespace CashDesk.Tests
         {
             using (var dal = new DataAccess())
             {
-                Assert.ThrowsAsync<ArgumentException>(async () => await dal.DeleteMemberAsync(Int32.MaxValue));
+                Assert.ThrowsAsync<ArgumentException>(async () =>  dal.DeleteMemberAsync(Int32.MaxValue));
             }
         }
 
@@ -20,9 +20,9 @@ namespace CashDesk.Tests
         {
             using (var dal = new DataAccess())
             {
-                await dal.InitializeDatabaseAsync();
-                var memberNumber = await dal.AddMemberAsync("Foo", "DeleteMember", DateTime.Today.AddYears(-18));
-                await dal.DeleteMemberAsync(memberNumber);
+                 dal.InitializeDatabaseAsync();
+                var memberNumber =  dal.AddMemberAsync("Foo", "DeleteMember", DateTime.Today.AddYears(-18));
+                 dal.DeleteMemberAsync(memberNumber);
             }
         }
 
@@ -31,11 +31,11 @@ namespace CashDesk.Tests
         {
             using (var dal = new DataAccess())
             {
-                await dal.InitializeDatabaseAsync();
-                var memberNumber = await dal.AddMemberAsync("Foo", "CascadeDeleteMember", DateTime.Today.AddYears(-18));
-                await dal.JoinMemberAsync(memberNumber);
-                await dal.DepositAsync(memberNumber, 100);
-                await dal.DeleteMemberAsync(memberNumber);
+                 dal.InitializeDatabaseAsync();
+                var memberNumber =  dal.AddMemberAsync("Foo", "CascadeDeleteMember", DateTime.Today.AddYears(-18));
+                 dal.JoinMemberAsync(memberNumber);
+                 dal.DepositAsync(memberNumber, 100);
+                 dal.DeleteMemberAsync(memberNumber);
             }
         }
     }

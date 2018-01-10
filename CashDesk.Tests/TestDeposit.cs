@@ -11,8 +11,8 @@ namespace CashDesk.Tests
         {
             using (var dal = new DataAccess())
             {
-                Assert.ThrowsAsync<ArgumentException>(async () => await dal.DepositAsync(Int32.MaxValue, 100M));
-                Assert.ThrowsAsync<ArgumentException>(async () => await dal.DepositAsync(1, -1M));
+                Assert.ThrowsAsync<ArgumentException>(async () =>  dal.DepositAsync(Int32.MaxValue, 100M));
+                Assert.ThrowsAsync<ArgumentException>(async () =>  dal.DepositAsync(1, -1M));
             }
         }
 
@@ -21,10 +21,10 @@ namespace CashDesk.Tests
         {
             using (var dal = new DataAccess())
             {
-                await dal.InitializeDatabaseAsync();
-                var memberNumber = await dal.AddMemberAsync("Foo", "Deposit", DateTime.Today.AddYears(-18));
-                await dal.JoinMemberAsync(memberNumber);
-                await dal.DepositAsync(memberNumber, 100M);
+                 dal.InitializeDatabaseAsync();
+                var memberNumber =  dal.AddMemberAsync("Foo", "Deposit", DateTime.Today.AddYears(-18));
+                 dal.JoinMemberAsync(memberNumber);
+                 dal.DepositAsync(memberNumber, 100M);
             }
         }
 
@@ -33,9 +33,9 @@ namespace CashDesk.Tests
         {
             using (var dal = new DataAccess())
             {
-                await dal.InitializeDatabaseAsync();
-                var memberNumber = await dal.AddMemberAsync("Foo", "NoMemberDeposit", DateTime.Today.AddYears(-18));
-                await Assert.ThrowsAsync<NoMemberException>(async () => await dal.DepositAsync(memberNumber, 100M));
+                 dal.InitializeDatabaseAsync();
+                var memberNumber =  dal.AddMemberAsync("Foo", "NoMemberDeposit", DateTime.Today.AddYears(-18));
+                 Assert.ThrowsAsync<NoMemberException>(async () =>  dal.DepositAsync(memberNumber, 100M));
             }
         }
     }
